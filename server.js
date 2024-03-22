@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 dotenv.config()
 import express from 'express'
-import { createResourse, bookSpace } from './database.js'
+import { createResource, bookSpace } from './database.js'
 const app = express()
 const PORT = process.env.PORT
 
@@ -9,7 +9,7 @@ const PORT = process.env.PORT
 app.use(express.json())
 
 app.post('/newspace', async(req, res)=>{
-    const newSpace = createResourse()
+    const newSpace = createResource()
     if(!newSpace) return res.status(401).json({message: 'Error trying to create new space'})
     res.status(200).json({message: "successfully created new space"})
 })

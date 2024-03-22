@@ -20,7 +20,7 @@ pool.getConnection()
 
 
 //creating a resourse
-export async function createResourse(){
+export async function createResource(){
     try{
         const result = await pool.query(`
         INSERT INTO workspace (booked)
