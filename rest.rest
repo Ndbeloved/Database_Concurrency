@@ -1,0 +1,10 @@
+post http://localhost:3000/newspace
+Content-Type: application/json
+
+###
+post http://localhost:3000/newspace
+Content-Type: application/json
+
+###
+post http://localhost:3000/bookspace/1/3
+Content-Type: application/json
